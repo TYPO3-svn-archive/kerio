@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'kerio'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_kerio_log">Log</label>
+			<label index="tx_kerio_log.message">Log message</label>
+			<label index="tx_kerio_log.feuid">Frontend User Id</label>
+			<label index="tx_kerio_log.timestamp">Time of occurence</label>
+			<label index="fe_users.tx_kerio_email">Kerio E-mail</label>
+			<label index="tt_content.list_type_pi1">E-mail administration</label>
+			<label index="ff_module">Module to display</label>
+		</languageKey>
+		<languageKey index="dk" type="array">
+			<label index="tx_kerio_log">Log</label>
+			<label index="tx_kerio_log.message">Log indhold</label>
+			<label index="tx_kerio_log.feuid">Bruger Id</label>
+			<label index="tx_kerio_log.timestamp">Tid for hendelse</label>
+			<label index="fe_users.tx_kerio_email">Kerio E-mail</label>
+			<label index="tt_content.list_type_pi1">E-mail administration</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,37 @@
+<T3DataStructure>
+<meta>
+      <langDisable>1</langDisable>
+</meta>
+<sheets>
+ <sDEF>
+  <ROOT>
+   <TCEforms>
+    <sheetTitle>LLL:EXT:kerio/locallang_db.xml:tt_content.pi_flexform.sheet_general</sheetTitle>
+   </TCEforms>
+   <type>array</type>
+    <el>
+		<module>
+	    	<TCEforms>
+		    	<label>LLL:EXT:kerio/locallang_db.xml:ff_module</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+					<eval>required</eval>
+				</config>
+			</TCEforms>
+		</module>
+		<kerio_credentials>
+			<TCEforms>
+				<label>LLL:EXT:kerio/locallang_db.xml:ff_keriocredentials</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+					<eval>required</eval>
+				</config>
+			</TCEforms>
+		</kerio_credentials>
+    </el>
+   </ROOT>
+  </sDEF>
+ </sheets>
+</T3DataStructure>

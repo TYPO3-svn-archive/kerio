@@ -1,0 +1,33 @@
+plugin.tx_kerio_pi1 {
+  general {
+    # cat=kerio/basic; type=string; label=Kerio Mailserver Version:Ex. 6.7.1
+    version = 
+    # cat=kerio/basic; type=options[mac,unix,windows]; label=The OS of this webserver
+    platform = 
+  }
+  file {
+    # cat=kerio/file; type=file; label=HTML Template file
+    templateFile = EXT:kerio/pi1/res/template.html
+    # cat=kerio/file; type=file; label=Command Template
+    commandFile = EXT:kerio/pi1/res/commands.html
+  }
+  server {
+    # cat=kerio/basic; type=string; label=Server hostname
+    host = 
+    # cat=kerio/basic; type=string; label=Username for kconfig
+    username = 
+    # cat=kerio/basic; type=string; label=Password for kconfig
+    password = 
+    # cat=kerio/basic; type=int+; label=Port for server
+    port = 
+    # cat=kerio/basic; type=string; label=Kerio Mail Domain
+    domain = 
+
+  }
+  log {
+    # cat=kerio/enable; type=boolean; label=Log frontend activities
+    frontend = 1
+    # cat=kerio/enable; type=boolean; label=Log actions towards mailserver
+    server = 1
+  }
+}

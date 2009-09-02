@@ -1,0 +1,2 @@
+    # cat=kerio/basic; type=string; label=Configuration file:If set, other server configuration is ignored!  (Ex. typo3conf/kerio/res/conf.php)
+    confFile = 

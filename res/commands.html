@@ -1,0 +1,17 @@
+<!-- ###COMMAND_USER_TO_ALIAS### begin -->
+	delete from User where Name = '###USER_EMAIL###' and Domain = '###KERIO_DOMAIN###'
+	insert Alias set Lhs = '###USER_EMAIL###', Rhs = '###USER_ALIAS###', Domain ='###KERIO_DOMAIN###'
+<!-- ###COMMAND_USER_TO_ALIAS### end -->
+
+<!-- ###COMMAND_ALIAS_TO_USER### begin -->
+	delete from Alias where Lhs = '###USER_EMAIL###' and Domain = '###KERIO_DOMAIN###'
+	insert User set Name = '###USER_EMAIL###', Domain = '###KERIO_DOMAIN###', Password = '###USER_PASSWORD###', Qstorage = '###KERIO_STORAGE###'
+<!-- ###COMMAND_ALIAS_TO_USER### end -->
+
+<!-- ###COMMAND_ADD_TO_MAILLIST### begin -->
+	select MListAdd('###MAILLIST_NAME###', '###KERIO_DOMAIN###', '###MAILLIST_EMAIL###', '###MAILLIST_MODE###', '###USER_NAME###')
+<!-- ###COMMAND_ADD_TO_MAILLIST### end -->
+
+<!-- ###COMMAND_REMOVE_FROM_MAILLIST### -->
+	select MListDel('###MAILLIST_NAME###', '###KERIO_DOMAIN###', '###MAILLIST_EMAIL###', '###MAILLIST_MODE###')
+<!-- ###COMMAND_REMOVE_FROM_MAILLIST### -->

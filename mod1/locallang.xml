@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;tools_txkerioM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Kerio Log Viewer</label>
+			<label index="func_list">List log entries</label>
+			<label index="func_createconf">Create conf file</label>
+			<label index="form_sword">Enter keyword:</label>
+			<label index="form_submit">Submit search</label>
+			<label index="log_id">Log id</label>
+			<label index="log_timestamp">Date of action</label>
+			<label index="log_message">Log message</label>
+			<label index="log_user">Frontend user</label>
+		</languageKey>
+		<languageKey index="dk" type="array">
+			<label index="title">Kerio Log Oversigt</label>
+		</languageKey>
+	</data>
+</T3locallang>

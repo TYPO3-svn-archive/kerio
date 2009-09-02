@@ -1,0 +1,22 @@
+plugin.tx_kerio_pi1 {
+	general {
+		version =
+		platform =
+  	}
+	file {
+		templateFile = {$plugin.tx_kerio_pi1.file.templateFile}
+		commandFile = {$plugin.tx_kerio_pi1.file.commandFile}
+	}
+	server {
+		host = {$plugin.tx_kerio_pi1.server.host}
+		username = {$plugin.tx_kerio_pi1.server.username}
+		password = {$plugin.tx_kerio_pi1.server.password}
+		port = {$plugin.tx_kerio_pi1.server.port}
+		domain = {$plugin.tx_kerio_pi1.server.domain}
+		conf = {$plugin.tx_kerio_pi1.server.conf}
+	}
+	log {
+		server = {$plugin.tx_kerio_pi1.log.server}
+		frontend = {$plugin.tx_kerio_pi1.log.frontend}
+	}
+}
